@@ -3,7 +3,7 @@ package org.soemirno.timesheets;
 public class EmployeeImpl implements Employee {
     private TimeSheet timeSheet;
 
-    public void register(Action codingWork) {
+    public void register(Loggable codingWork) {
         timeSheet.add(this, codingWork);
     }
 
