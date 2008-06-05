@@ -1,13 +1,7 @@
 package org.soemirno.timesheets;
 
-public class Employee {
-    private TimeSheet timeSheet;
+public interface Employee {
+    void register(Action codingWork);
 
-    public void register(Action codingWork) {
-        timeSheet.add(this, codingWork);
-    }
-
-    public void open(TimeSheet timeSheet) {
-        this.timeSheet = timeSheet;
-    }
+    void open(TimeSheet timeSheet);
 }

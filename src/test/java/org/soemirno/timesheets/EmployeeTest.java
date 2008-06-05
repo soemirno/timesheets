@@ -18,7 +18,7 @@ public class EmployeeTest
 		codingWork = context.mock(Action.class);
 		timeSheet = context.mock(TimeSheet.class);
 
-		james = new Employee();
+		james = new EmployeeImpl();
 		james.open(timeSheet);
 	}
 
